@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GymFit - Ropa Fitness</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #000;
+            color: #f1c40f;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #f1c40f;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+            transition: transform 0.3s;
+        }
+
+        nav ul li:hover {
+            transform: scale(1.1);
+        }
+
+        nav ul li a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            border-bottom: 2px solid #f1c40f;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            background-color: #222;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border: 2px solid #f1c40f;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            border-color: #fff;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #f1c40f;
+            transition: color 0.3s;
+        }
+
+        section:hover h2 {
+            color: #fff;
+        }
+
+        p, li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+
+        section:hover p, section:hover li {
+            color: #fff;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border: 3px solid #f1c40f;
+            border-radius: 10px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        section:hover img {
+            transform: scale(1.05);
+            border-color: #fff;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+        }
+
+        /* Animación al entrar las secciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeIn 0.7s ease-out forwards;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #f1c40f;
+            border-top: 3px solid #f1c40f;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Encabezado con navegación -->
+    <header>
+        <img src="imagen/logo-gymfit.png" alt="Logo de GymFit" style="max-width: 10%; height: auto;">
+        <h1>GymFit - Ropa Fitness Elegante</h1>
+        <iframe width="793" height="446" src="https://www.youtube.com/embed/6TtY-FN2htE" title="Los MEJORES MOMENTOS de la Red Bull BC One World Final 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <nav>
+            <ul>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Quiénes Somos -->
+    <section id="quienes-somos">
+        <h2>Quiénes Somos</h2> 
+        <p>En GymFit, nos especializamos en ofrecer ropa fitness que combina estilo y rendimiento. Nuestras prendas están diseñadas para aquellos que buscan elegancia sin sacrificar comodidad.</p>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <p>Conoce nuestra colección exclusiva:</p>
+        <ul>
+            <li><a href="#polera">Polera</a></li>
+            <li><a href="#polo">Polo</a></li>
+            <li><a href="#joger">Joger</a></li>
+        </ul>
+    </section>
+
+    <!-- Sección de Polera -->
+    <section id="polera">
+        <h2>Polera Deportiva</h2>
+        <img src="imagen/polera-fitness.jpg" alt="Imagen de Polera Fitness">
+        <p>Nuestras poleras combinan ligereza y estilo, fabricadas con materiales transpirables que se ajustan a tu cuerpo, brindando comodidad durante todo el entrenamiento.</p>
+    </section>
+
+    <!-- Sección de Polo -->
+    <section id="polo">
+        <h2>Polo Deportivo</h2>
+        <img src="imagen/polo-fitness.jpg" alt="Imagen de Polo Fitness">
+        <p>El polo de GymFit es la elección perfecta para quienes buscan elegancia en cada movimiento. Ideal para entrenamientos o actividades casuales, su diseño ofrece una comodidad incomparable.</p>
+    </section>
+
+    <!-- Sección de Joger -->
+    <section id="joger">
+        <h2>Joger Deportivo</h2>
+        <img src="imagen/joger-fitness.jpg" alt="Imagen de Joger Fitness">
+        <p>Nuestros joggers ofrecen un ajuste perfecto, combinando flexibilidad y soporte. Ya sea para entrenar o para un look casual, estos joggers te proporcionarán el estilo y la comodidad que necesitas.</p>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <p>Lo que nuestros clientes opinan:</p>
+        <ul>
+            <li>"Calidad y elegancia en cada prenda." - Juan P.</li>
+            <li>"No puedo entrenar con otra marca, ¡simplemente los mejores!" - Elena F.</li>
+            <li>"Estilo y funcionalidad, GymFit lo tiene todo." - Pedro G.</li>
+        </ul>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 GymFit. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
